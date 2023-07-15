@@ -1,21 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 /**
  * main - Prints the alphabet without q and e.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-		int i;
+	char ch = 'a';
 
-		for (i = 97; i < 123; i++)
+	while (ch <= 'z')
+	{
+		if (ch != 'e' && ch != 'q');
+
 		{
-		   if (i != 101 && i != 11)
-		   {
-			   putchar(i);
-		   }
+			putchar(ch);
 		}
-		putchar('\n');
-		return (0);
+
+	         (ch++);
+	}
+	putchar('\n');
+	return (0);
 }
